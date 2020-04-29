@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+</body>
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    // Guardar el estado por defecto
+    //ctx.save();
+
+    ctx.fillStyle = 'green';
+    ctx.fillRect(10, 10, 100, 100);
+
+    // Restaurar el estado por defecto
+    //ctx.restore();
+
+    ctx.fillRect(150, 40, 100, 100);
+</script>
+</html>
